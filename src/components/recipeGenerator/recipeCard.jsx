@@ -32,7 +32,7 @@ function RecipeCard({ recipe }) {
     <div>
       <header>
         <h2>{ recipe.name }</h2>
-        <h3>Cagegory: { recipe.category } from { recipe.area }</h3>
+        <h3>An { recipe.area } { recipe.category } recipe</h3>
       </header>
 
       <section>
