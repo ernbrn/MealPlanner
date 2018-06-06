@@ -2,7 +2,7 @@ import apiClient from '../../api-client';
 import { generateUsableRecipeResponse } from '../../response-helpers';
 
 const service = {
-  getRecipesrandomRecipesGenerate(params) {
+  getRandomRecipe(params) {
     const config = { params };
     return apiClient
       .get('/random.php', config)

@@ -5,7 +5,7 @@ import {
   selectRecipe,
   selectLoading
 } from '../../modules/recipes/recipeSelectors';
-import { getRecipesrandomRecipesGenerate } from '../../modules/recipes/recipeActions';
+import { getRandomRecipe } from '../../modules/recipes/recipeActions';
 import RecipeCard from './recipeCard';
 
 function RecipeGenerator(props) {
@@ -15,7 +15,7 @@ function RecipeGenerator(props) {
 
       <p>
         <button
-          onClick={() => props.getRecipesrandomRecipesGenerate()}
+          onClick={() => props.getRandomRecipe()}
           disabled={props.loading}>
           Get a meal plan!
         </button>
@@ -32,6 +32,6 @@ export default connect(
     recipe: selectRecipe
   }),
   {
-    getRecipesrandomRecipesGenerate
+    getRandomRecipe
   }
 )(RecipeGenerator);
