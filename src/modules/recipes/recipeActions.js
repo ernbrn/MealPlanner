@@ -4,7 +4,7 @@ import * as types from './recipeConstants';
 export function getRandomRecipe(params = {}) {
   return dispatch => {
     dispatch({ type: types.GET_RECIPE_MEAL_PLANS_GENERATE_START });
-    service
+    return service
       .getRandomRecipe(params)
       .then(payload =>
         dispatch({
